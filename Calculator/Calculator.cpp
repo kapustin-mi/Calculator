@@ -16,6 +16,8 @@ double readNumber(string variable)
         return readNumber(variable);
     }
     
+    cin.ignore(999, '\n');
+    
     return number;
 }
 
@@ -32,6 +34,8 @@ char readOperation() {
         cout << "Invalid value! Only 4 operation can be used (+, -, *, / (:)). Please, try again...\n";
         return readOperation();
     }
+    
+    cin.ignore(999, '\n');
 
     return sign;
 }
